@@ -27,7 +27,7 @@ tab2.addEventListener("click", function() {
 tab3.addEventListener("click", function() {
     box1.style.opacity = 0;
     box2.style.opacity = 0;
-    box3.style.opacity = 3;
+    box3.style.opacity = 1;
     tab1.classList.remove("active");
     tab2.classList.remove("active");
     tab3.classList.add("active");
