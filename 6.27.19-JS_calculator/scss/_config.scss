@@ -1,0 +1,20 @@
+@import 'colors';
+
+* {
+    font-family: "Oswald", sans-serif;
+}
+
+html {
+    font-size: 62.5%;  /* converts to 10px */
+    background-color: $body-background-color;
+    box-sizing: border-box;
+}
+
+@mixin text-tranform {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;  /* Safari */
+    -khtml-user-select: none;  /* Konqueror HTML */
+    -moz-user-select: none;  /* Firefox */
+    -ms-user-select: none;  /* Internet Explorer/Edge */
+    user-select: none;  /* Non-prefixed verion, currently supported by Chrome and Opera */
+}

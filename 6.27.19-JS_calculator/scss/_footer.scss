@@ -1,0 +1,26 @@
+@import 'colors';
+$footer-font-family: 'Courier New', Courier, monospace; 
+
+footer {
+    font-family: $footer-font-family;
+    font-size: 1.5rem;
+    position: absolute;
+    display: block;
+    width: 40rem;
+    text-align: center;
+    margin: auto;
+    right: 0;
+    bottom: 1.5rem;
+    left: 0;
+    text-transform: lowercase;
+
+    a {
+        font-family: $footer-font-family;
+
+        &:visited {
+            color: $footer-visited;
+        }
+    }
+
+    
+}
