@@ -1,7 +1,8 @@
+$main-font: "Oswald", sans-serif;
 @import 'colors';
 
 * {
-    font-family: "Oswald", sans-serif;
+    font-family: $main-font;
 }
 
 html {
