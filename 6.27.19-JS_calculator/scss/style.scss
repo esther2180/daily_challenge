@@ -46,6 +46,8 @@ h1 {
 }
 
 #display {
+    // direction: ltr;
+    // unicode-bidi: bidi-override;
     width: 33.75rem;
     height: 8rem;
     background-color: #eee;
@@ -61,6 +63,7 @@ h1 {
     font-family: $main-font;
     font-weight: 400;
     margin-right: 3rem;
+    
 }
 
 button {
