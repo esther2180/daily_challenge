@@ -34,10 +34,43 @@ updateDisplayVal = (e) => {
 }
 
 // Perform the mathemetical operations
+performOperation = (e) => {
+    let operator = e.target.innerText;
+
+    switch (operator) {
+        case '+':
+            pendingVal = displayVal;
+            // displayVal = '0';
+            displayValElement.innerText = pendingVal;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push('+');
+            break;
+        case '-':
+            break;
+        case 'x':
+            break;
+        case '÷':
+            break;
+        case '=':
+            evalStringArray.push(displayVal);
+            var evaluation = eval(evalStringArray.join(' '));
+            displayVal = evaluation + '';
+            console.log(typeof displayVal);
+            displayValElement.innerText = displayVal;
+            evalStringArray = [];
+            break;
+        default:
+            break;  
+    }
+}
 
 // Event listeners for the number and operator buttons
 for (let i = 0; i < btnNumbers.length; i++) {
     btnNumbers[i].addEventListener('click', updateDisplayVal);
+}
+
+for (let i = 0; i < btnOperators.length; i++) {
+    btnOperators[i].addEventListener('click', performOperation);
 }
 
 // On clicking AC button, all values and the display are being reset
